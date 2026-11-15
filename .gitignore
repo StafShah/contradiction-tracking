@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# Secrets: never commit keys
+.env
+.env.*
+!.env.example
+*.key
+
+# Raw run logs and Inspect logs
+runs/*
+!runs/.gitkeep
+logs/
+
+# Model weights and caches
+*.safetensors
+*.gguf
+*.bin
+*.pt
+models/
+hf_cache/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
